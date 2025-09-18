@@ -5,6 +5,9 @@ on:
     - cron: "0 10 * * *"   # tạo issue mỗi ngày lúc 10h UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   issue:
     runs-on: ubuntu-latest

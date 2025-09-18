@@ -5,6 +5,9 @@ on:
     - cron: "0 */6 * * *"   # commit mỗi 6 tiếng
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
